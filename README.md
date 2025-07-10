@@ -1,5 +1,9 @@
 # MuseScore plugin: add scale-degree numbers
 
+![screenshot](https://github.com/meganlavengood/MS-SD-plugin/blob/main/demo.png?raw=true)
+
+[View example score on MuseScore.com](https://musescore.com/user/32728834/scores/26193772)
+
 ## Purpose
 
 Adds lyrics below notes that correspond to scale-degree numbers in major or minor. Uses SMuFL glyphs to properly display scale degrees as Arabic numerals with carats/circumflex. Raised/lowered scale degrees are shown with arrows.
