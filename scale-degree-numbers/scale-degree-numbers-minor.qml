@@ -28,16 +28,19 @@ MuseScore {
 
     // accidentals (↑, ↓)
 
-    return ("\     \uEF03,\uEF00,\uEF04\
-    ,\uEF01,\uEF05,\uEF02,7,↓\uEF04,↓\uEF01,↓\uEF05\
-    ,↓\uEF02,↓\uEF06, \uEF03,\uEF00,\uEF04,\uEF01,\uEF05\
-    ,\uEF02,\uEF06\
-          ,↓\uEF04,↓\uEF01,↓\uEF05,↓\uEF02,↓\uEF06\
-    , \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06\
-    ,↑ \uEF03,↑\uEF00,↑\uEF04,↑\uEF01,↑\uEF05\
-                  , \uEF03,\uEF00\
-    ,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,↑ \uEF03,↑\uEF00\
-    ,↑\uEF04,↑\uEF01,↑\uEF05, \uEF03,\uEF00,\uEF04,\uEF01\
+    // codes from SMuFL https://w3c.github.io/smufl/latest/tables/scale-degrees.html
+    // final integer corresponds to scale-degree number minus 1 (e.g., ^2 = \uEF01)
+
+    return ("\
+    \uEF03,\uEF00,\uEF04\,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,↓\uEF05\,↓\uEF02,↓\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05\,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,↓\uEF05,↓\uEF02,↓\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↑\uEF03,↑\uEF00,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↑\uEF03,↑\uEF00\,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01\
     "
     .replace(/↓/g,arrows?'↓':'♭')
     .replace(/↑/g,arrows?'↑':'♯')

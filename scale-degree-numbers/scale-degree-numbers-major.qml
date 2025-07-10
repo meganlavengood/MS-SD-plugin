@@ -18,7 +18,7 @@ MuseScore {
     }
   }
   function makeSolfaArray(){
-    var arrows=true // set to false for sharp and flat signs instead of arrows
+    var arrows=true  // set to false for sharp and flat signs instead of arrows
 
     // https://musescore.github.io/MuseScore_PluginAPI_Docs/plugins/html/tpc.html
     //+3

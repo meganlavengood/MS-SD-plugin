@@ -14,11 +14,12 @@ By default, raised/lowered scale degrees are shown with arrows. To change to sha
 
 ## Installation instructions
 
-1. Move the **scale-degree-numbers** folder to MuseScore’s plugins folder. This is configurable at **Preferences > General > Folders**. The default directories are:
+1.
+2. Move the **scale-degree-numbers** folder to MuseScore’s plugins folder. This is configurable at **Preferences > General > Folders**. The default directories are:
     - Windows: C:\Users\%USERNAME%\Documents\MuseScore4\Plugins
     - nmacOS: ~/Documents/MuseScore4/Plugins
     - Linux: ~/Documents/MuseScore4/Plugins
-2. In MuseScore, click **Plugins > Manage plugins** and enable both plugins (major and minor).
+3. In MuseScore, click **Plugins > Manage plugins** and enable both plugins (major and minor).
 
 To update to a new version, simply replace the **scale-degree-numbers** folder with the new one (you may need to restart Musescore).
 
