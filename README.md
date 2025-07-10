@@ -28,6 +28,6 @@ To update to a new version, simply replace the **scale-degree-numbers** folder w
 
 ## Notes
 
-Developed for use with Open Music Theory (https://viva.pressbooks.pub/openmusictheory).
+Developed for use with [Open Music Theory](https://viva.pressbooks.pub/openmusictheory).
 
-Based on https://musescore.org/en/project/add-jianpu-numbers-text-lyrics-wuxianpu-jianpu
+Based on [Add Jianpu numbers as text (lyrics): 五线谱->简谱](https://musescore.org/en/project/add-jianpu-numbers-text-lyrics-wuxianpu-jianpu)
