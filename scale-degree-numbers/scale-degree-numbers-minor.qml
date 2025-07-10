@@ -4,7 +4,7 @@ MuseScore {
   property string pname:"Add (scale degree numbers) as lyrics"
   menuPath: "Plugins."+pname
   version: "20230517A";
-  thumbnailName: "solfege_number.png";
+  thumbnailName: "sd-num-minor.png";
   title: "Scale degree numbers (minor)"
   description: "This plugin adds scale-degree numbers for minor as lyrics under notes: 1, 2, 3, 4, 5, 6, 7; ↓2, ↓3, ↓5, ↓6, ↓7; ↑1, ↑2, ↑4, ↑5, ↑6";
 
@@ -18,7 +18,8 @@ MuseScore {
     }
   }
   function makeSolfaArray(){
-    var dobasedminor=true
+    var arrows=true  // set to false for sharp and flat signs instead of arrows
+
     // https://musescore.github.io/MuseScore_PluginAPI_Docs/plugins/html/tpc.html
     //+3
     //+7
@@ -38,8 +39,9 @@ MuseScore {
     ,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,↑ \uEF03,↑\uEF00\
     ,↑\uEF04,↑\uEF01,↑\uEF05, \uEF03,\uEF00,\uEF04,\uEF01\
     "
+    .replace(/↓/g,arrows?'↓':'♭')
+    .replace(/↑/g,arrows?'↑':'♯')
     .replace(/\s/g,'').split(',')
-    .slice(dobasedminor?0:3)
     )
 
   }

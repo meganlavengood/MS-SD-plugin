@@ -6,7 +6,9 @@
 
 ## Purpose
 
-Adds lyrics below notes that correspond to scale-degree numbers in major or minor. Uses SMuFL glyphs to properly display scale degrees as Arabic numerals with carats/circumflex. Raised/lowered scale degrees are shown with arrows.
+Adds lyrics below notes that correspond to scale-degree numbers in major or minor. Uses SMuFL glyphs to properly display scale degrees as Arabic numerals with carats/circumflex.
+
+By default, raised/lowered scale degrees are shown with arrows. To change to sharp and flat signs, in the .qml file, set `var arrows` to `false`.
 
 **Requires that you use Bravura font for Lyrics text style in order to display properly.**
 
@@ -25,6 +27,8 @@ To update to a new version, simply replace the **scale-degree-numbers** folder w
 
 1. **Ensure that your Lyrics text type has its font set to Bravura.** Other fonts may not properly display the scale-degree glyphs.
 2. Click **Plugins > Scale degree numbers ([major or minor])**
+
+By default, raised/lowered scale degrees are shown with arrows. To change to sharp and flat signs, in the .qml file, set `var arrows` to `false`.
 
 ## Notes
 

@@ -18,7 +18,8 @@ MuseScore {
     }
   }
   function makeSolfaArray(){
-    var dobasedminor=false
+    var arrows=true // set to false for sharp and flat signs instead of arrows
+
     // https://musescore.github.io/MuseScore_PluginAPI_Docs/plugins/html/tpc.html
     //+3
     //+7
@@ -27,19 +28,24 @@ MuseScore {
 
     // accidentals (↑, ↓)
 
-    return ("\     \uEF03,\uEF00,\uEF04\
-    ,\uEF01,\uEF05,\uEF02,7,↓\uEF04,↓\uEF01,↓\uEF05\
-    ,↓\uEF02,↓\uEF06, \uEF03,\uEF00,\uEF04,\uEF01,\uEF05\
-    ,\uEF02,\uEF06\
-          ,↓\uEF04,↓\uEF01,↓\uEF05,↓\uEF02,↓\uEF06\
-    , \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06\
-    ,↑ \uEF03,↑\uEF00,↑\uEF04,↑\uEF01,↑\uEF05\
-                  , \uEF03,\uEF00\
-    ,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,↑ \uEF03,↑\uEF00\
-    ,↑\uEF04,↑\uEF01,↑\uEF05, \uEF03,\uEF00,\uEF04,\uEF01\
+    // codes from SMuFL https://w3c.github.io/smufl/latest/tables/scale-degrees.html
+    // final integer corresponds to scale-degree number minus 1 (e.g., ^2 = \uEF01)
+
+    return ("\
+    \uEF03,\uEF00,\uEF04\,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,↓\uEF05\,↓\uEF02,↓\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05\,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,↓\uEF05,↓\uEF02,↓\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↑\uEF03,↑\uEF00,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↑\uEF03,↑\uEF00\,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01\
     "
+    .replace(/↓/g,arrows?'↓':'♭')
+    .replace(/↑/g,arrows?'↑':'♯')
     .replace(/\s/g,'').split(',')
-    .slice(dobasedminor?0:3)
+    .slice(3)
     )
 
   }
