@@ -48,15 +48,15 @@ MuseScore {
     // )
 
 return ("\
-    \uEF03-1,\uEF00-1,\uEF04\-1,\uEF01-1,\uEF05-1,\uEF02-1,\uEF06-1,\
-    ↓\uEF04-,↓\uEF01-,↓\uEF05\-,↓\uEF02-,↓\uEF06-,\
-    \uEF03-3,\uEF00-3,\uEF04-3,\uEF01-3,\uEF05\-3,\uEF02-3,\uEF06-3,\
-    ↓\uEF04-4,↓\uEF01-4,\uEF05-4,\uEF02-4,\uEF06-4,\
-    \uEF03-5,\uEF00-5,\uEF04-5,\uEF01-5,↑\uEF05-5,↑\uEF02-5,↑\uEF06-5,\
-    ↑\uEF03-6,↑\uEF00-6,↑\uEF04-6,↑\uEF01-6,↑\uEF05-6,\
-    \uEF03-7,\uEF00-7,\uEF04-7,\uEF01-7,\uEF05-7,\uEF02-7,\uEF06-7,\
-    ↑\uEF03-8,↑\uEF00\-8,↑\uEF04-8,↑\uEF01-8,↑\uEF05-8,\
-    \uEF03-9,\uEF00-9,\uEF04-9,\uEF01-9\
+    \uEF03,\uEF00,\uEF04\,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,↓\uEF05\,↓\uEF02,↓\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05\,\uEF02,\uEF06,\
+    ↓\uEF04,↓\uEF01,\uEF05,\uEF02,\uEF06,\
+    \uEF03,\uEF00,\uEF04,\uEF01,↑\uEF05,↑\uEF02,↑\uEF06,\
+    ↑\uEF03,↑\uEF00,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01,\uEF05,\uEF02,\uEF06,\
+    ↑\uEF03,↑\uEF00\,↑\uEF04,↑\uEF01,↑\uEF05,\
+    \uEF03,\uEF00,\uEF04,\uEF01\
     "
     .replace(/↓/g,arrows?'↓':'♭')
     .replace(/↑/g,arrows?'↑':'♯')
